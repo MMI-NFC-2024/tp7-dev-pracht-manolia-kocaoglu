@@ -1,0 +1,82 @@
+[
+    {
+      "nom": "Université Paris-Saclay",
+      "ville": "Orsay",
+      "type": "Université",
+      "adresse": "Rue André Rivière",
+      "latitude": 48.7007,
+      "longitude": 2.1737
+    },
+    {
+      "nom": "Sorbonne Université",
+      "ville": "Paris",
+      "type": "Université",
+      "adresse": "21 Rue de l'École de Médecine",
+      "latitude": 48.8499,
+      "longitude": 2.3429
+    },
+    {
+      "nom": "Université de Lyon",
+      "ville": "Lyon",
+      "type": "Université",
+      "adresse": "92 Rue Pasteur",
+      "latitude": 45.7640,
+      "longitude": 4.8357
+    },
+    {
+      "nom": "Université de Bordeaux",
+      "ville": "Bordeaux",
+      "type": "Université",
+      "adresse": "351 Cours de la Libération",
+      "latitude": 44.8072,
+      "longitude": -0.5967
+    },
+    {
+      "nom": "Université de Toulouse",
+      "ville": "Toulouse",
+      "type": "Université",
+      "adresse": "41 Allée Jules Guesde",
+      "latitude": 43.5804,
+      "longitude": 1.4632
+    },
+    {
+      "nom": "Université de Lille",
+      "ville": "Lille",
+      "type": "Université",
+      "adresse": "42 Rue Paul Duez",
+      "latitude": 50.6092,
+      "longitude": 3.1357
+    },
+    {
+      "nom": "Université Grenoble Alpes",
+      "ville": "Grenoble",
+      "type": "Université",
+      "adresse": "621 Avenue Centrale",
+      "latitude": 45.1937,
+      "longitude": 5.7682
+    },
+    {
+      "nom": "Aix-Marseille Université",
+      "ville": "Marseille",
+      "type": "Université",
+      "adresse": "58 Boulevard Charles Livon",
+      "latitude": 43.2805,
+      "longitude": 5.3781
+    },
+    {
+      "nom": "Université de Strasbourg",
+      "ville": "Strasbourg",
+      "type": "Université",
+      "adresse": "4 Rue Blaise Pascal",
+      "latitude": 48.5839,
+      "longitude": 7.7455
+    },
+    {
+      "nom": "Université de Nantes",
+      "ville": "Nantes",
+      "type": "Université",
+      "adresse": "1 Quai de Tourville",
+      "latitude": 47.2121,
+      "longitude": -1.5504
+    }
+  ]

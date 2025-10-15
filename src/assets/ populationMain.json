@@ -1,0 +1,380 @@
+[
+    {
+      "Géographie": "Ain",
+      "Période": 2015,
+      "Sexe": "Total",
+      "Âge": "Total",
+      "Valeur": 638425
+    },
+    {
+      "Géographie": "Ain",
+      "Période": 2015,
+      "Sexe": "Homme",
+      "Âge": "Total",
+      "Valeur": 316890
+    },
+    {
+      "Géographie": "Ain",
+      "Période": 2015,
+      "Sexe": "Femme",
+      "Âge": "Total",
+      "Valeur": 321535
+    },
+    {
+      "Géographie": "Aisne",
+      "Période": 2015,
+      "Sexe": "Total",
+      "Âge": "Total",
+      "Valeur": 538659
+    },
+    {
+      "Géographie": "Aisne",
+      "Période": 2015,
+      "Sexe": "Homme",
+      "Âge": "Total",
+      "Valeur": 265742
+    },
+    {
+      "Géographie": "Aisne",
+      "Période": 2015,
+      "Sexe": "Femme",
+      "Âge": "Total",
+      "Valeur": 272917
+    },
+    {
+      "Géographie": "Allier",
+      "Période": 2015,
+      "Sexe": "Total",
+      "Âge": "Total",
+      "Valeur": 343046
+    },
+    {
+      "Géographie": "Allier",
+      "Période": 2015,
+      "Sexe": "Homme",
+      "Âge": "Total",
+      "Valeur": 166582
+    },
+    {
+      "Géographie": "Allier",
+      "Période": 2015,
+      "Sexe": "Femme",
+      "Âge": "Total",
+      "Valeur": 176464
+    },
+    {
+      "Géographie": "Alpes-de-Haute-Provence",
+      "Période": 2015,
+      "Sexe": "Total",
+      "Âge": "Total",
+      "Valeur": 163915
+    },
+    {
+      "Géographie": "Alpes-de-Haute-Provence",
+      "Période": 2015,
+      "Sexe": "Homme",
+      "Âge": "Total",
+      "Valeur": 81250
+    },
+    {
+      "Géographie": "Alpes-de-Haute-Provence",
+      "Période": 2015,
+      "Sexe": "Femme",
+      "Âge": "Total",
+      "Valeur": 82665
+    },
+    {
+      "Géographie": "Hautes-Alpes",
+      "Période": 2015,
+      "Sexe": "Total",
+      "Âge": "Total",
+      "Valeur": 141284
+    },
+    {
+      "Géographie": "Hautes-Alpes",
+      "Période": 2015,
+      "Sexe": "Homme",
+      "Âge": "Total",
+      "Valeur": 70145
+    },
+    {
+      "Géographie": "Hautes-Alpes",
+      "Période": 2015,
+      "Sexe": "Femme",
+      "Âge": "Total",
+      "Valeur": 71139
+    },
+    {
+      "Géographie": "Alpes-Maritimes",
+      "Période": 2015,
+      "Sexe": "Total",
+      "Âge": "Total",
+      "Valeur": 1083310
+    },
+    {
+      "Géographie": "Alpes-Maritimes",
+      "Période": 2015,
+      "Sexe": "Homme",
+      "Âge": "Total",
+      "Valeur": 515823
+    },
+    {
+      "Géographie": "Alpes-Maritimes",
+      "Période": 2015,
+      "Sexe": "Femme",
+      "Âge": "Total",
+      "Valeur": 567487
+    },
+    {
+      "Géographie": "Ardèche",
+      "Période": 2015,
+      "Sexe": "Total",
+      "Âge": "Total",
+      "Valeur": 322381
+    },
+    {
+      "Géographie": "Ardèche",
+      "Période": 2015,
+      "Sexe": "Homme",
+      "Âge": "Total",
+      "Valeur": 159634
+    },
+    {
+      "Géographie": "Ardèche",
+      "Période": 2015,
+      "Sexe": "Femme",
+      "Âge": "Total",
+      "Valeur": 162747
+    },
+    {
+      "Géographie": "Paris",
+      "Période": 2015,
+      "Sexe": "Total",
+      "Âge": "Total",
+      "Valeur": 2229621
+    },
+    {
+      "Géographie": "Paris",
+      "Période": 2015,
+      "Sexe": "Homme",
+      "Âge": "Total",
+      "Valeur": 1059494
+    },
+    {
+      "Géographie": "Paris",
+      "Période": 2015,
+      "Sexe": "Femme",
+      "Âge": "Total",
+      "Valeur": 1170127
+    },
+    {
+      "Géographie": "Bouches-du-Rhône",
+      "Période": 2015,
+      "Sexe": "Total",
+      "Âge": "Total",
+      "Valeur": 2014655
+    },
+    {
+      "Géographie": "Bouches-du-Rhône",
+      "Période": 2015,
+      "Sexe": "Homme",
+      "Âge": "Total",
+      "Valeur": 978456
+    },
+    {
+      "Géographie": "Bouches-du-Rhône",
+      "Période": 2015,
+      "Sexe": "Femme",
+      "Âge": "Total",
+      "Valeur": 1036199
+    },
+    {
+      "Géographie": "Nord",
+      "Période": 2015,
+      "Sexe": "Total",
+      "Âge": "Total",
+      "Valeur": 2603472
+    },
+    {
+      "Géographie": "Nord",
+      "Période": 2015,
+      "Sexe": "Homme",
+      "Âge": "Total",
+      "Valeur": 1275563
+    },
+    {
+      "Géographie": "Nord",
+      "Période": 2015,
+      "Sexe": "Femme",
+      "Âge": "Total",
+      "Valeur": 1327909
+    },
+    {
+      "Géographie": "Ain",
+      "Période": 2020,
+      "Sexe": "Total",
+      "Âge": "Total",
+      "Valeur": 652432
+    },
+    {
+      "Géographie": "Ain",
+      "Période": 2020,
+      "Sexe": "Homme",
+      "Âge": "Total",
+      "Valeur": 323567
+    },
+    {
+      "Géographie": "Ain",
+      "Période": 2020,
+      "Sexe": "Femme",
+      "Âge": "Total",
+      "Valeur": 328865
+    },
+    {
+      "Géographie": "Aisne",
+      "Période": 2020,
+      "Sexe": "Total",
+      "Âge": "Total",
+      "Valeur": 531345
+    },
+    {
+      "Géographie": "Aisne",
+      "Période": 2020,
+      "Sexe": "Homme",
+      "Âge": "Total",
+      "Valeur": 262134
+    },
+    {
+      "Géographie": "Aisne",
+      "Période": 2020,
+      "Sexe": "Femme",
+      "Âge": "Total",
+      "Valeur": 269211
+    },
+    {
+      "Géographie": "Allier",
+      "Période": 2020,
+      "Sexe": "Total",
+      "Âge": "Total",
+      "Valeur": 335975
+    },
+    {
+      "Géographie": "Allier",
+      "Période": 2020,
+      "Sexe": "Homme",
+      "Âge": "Total",
+      "Valeur": 163128
+    },
+    {
+      "Géographie": "Allier",
+      "Période": 2020,
+      "Sexe": "Femme",
+      "Âge": "Total",
+      "Valeur": 172847
+    },
+    {
+      "Géographie": "Paris",
+      "Période": 2020,
+      "Sexe": "Total",
+      "Âge": "Total",
+      "Valeur": 2165423
+    },
+    {
+      "Géographie": "Paris",
+      "Période": 2020,
+      "Sexe": "Homme",
+      "Âge": "Total",
+      "Valeur": 1029123
+    },
+    {
+      "Géographie": "Paris",
+      "Période": 2020,
+      "Sexe": "Femme",
+      "Âge": "Total",
+      "Valeur": 1136300
+    },
+    {
+      "Géographie": "Bouches-du-Rhône",
+      "Période": 2020,
+      "Sexe": "Total",
+      "Âge": "Total",
+      "Valeur": 2043110
+    },
+    {
+      "Géographie": "Bouches-du-Rhône",
+      "Période": 2020,
+      "Sexe": "Homme",
+      "Âge": "Total",
+      "Valeur": 992345
+    },
+    {
+      "Géographie": "Bouches-du-Rhône",
+      "Période": 2020,
+      "Sexe": "Femme",
+      "Âge": "Total",
+      "Valeur": 1050765
+    },
+    {
+      "Géographie": "Nord",
+      "Période": 2020,
+      "Sexe": "Total",
+      "Âge": "Total",
+      "Valeur": 2608346
+    },
+    {
+      "Géographie": "Nord",
+      "Période": 2020,
+      "Sexe": "Homme",
+      "Âge": "Total",
+      "Valeur": 1278945
+    },
+    {
+      "Géographie": "Nord",
+      "Période": 2020,
+      "Sexe": "Femme",
+      "Âge": "Total",
+      "Valeur": 1329401
+    },
+    {
+      "Géographie": "Ain",
+      "Période": 2015,
+      "Sexe": "Total",
+      "Âge": "0-19 ans",
+      "Valeur": 165240
+    },
+    {
+      "Géographie": "Ain",
+      "Période": 2015,
+      "Sexe": "Total",
+      "Âge": "20-64 ans",
+      "Valeur": 375890
+    },
+    {
+      "Géographie": "Ain",
+      "Période": 2015,
+      "Sexe": "Total",
+      "Âge": "65 ans et plus",
+      "Valeur": 97295
+    },
+    {
+      "Géographie": "Paris",
+      "Période": 2015,
+      "Sexe": "Total",
+      "Âge": "0-19 ans",
+      "Valeur": 445924
+    },
+    {
+      "Géographie": "Paris",
+      "Période": 2015,
+      "Sexe": "Total",
+      "Âge": "20-64 ans",
+      "Valeur": 1523456
+    },
+    {
+      "Géographie": "Paris",
+      "Période": 2015,
+      "Sexe": "Total",
+      "Âge": "65 ans et plus",
+      "Valeur": 260241
+    }
+  ]

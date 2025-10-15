@@ -1,0 +1,113 @@
+---
+import Layout from "../layouts/Layout.astro";
+import populationMain from "../assets/ populationMain.json";
+
+const listePeriode = [...new Set(populationMain?.map((d) => d.Période))].reverse();
+const listeSexe = [...new Set(populationMain?.map((d) => d.Sexe))];
+const listeAge = [...new Set(populationMain?.map((d) => d["Âge"]))];
+---
+
+<Layout>
+  <h1 class="text-2xl mb-4">Population par département</h1>
+  
+  <div class="mb-4 flex gap-4">
+    <div>
+      <label for="periode" class="block mb-1 font-semibold">Année:</label>
+      <select id="periode" class="border rounded px-3 py-2">
+        {listePeriode.map((p, i) => <option selected={i === 0}>{p}</option>)}
+      </select>
+    </div>
+    
+    <div>
+      <label for="sexe" class="block mb-1 font-semibold">Sexe:</label>
+      <select id="sexe" class="border rounded px-3 py-2">
+        {listeSexe.map((s, i) => <option selected={s === "Total"}>{s}</option>)}
+      </select>
+    </div>
+    
+    <div>
+      <label for="age" class="block mb-1 font-semibold">Âge:</label>
+      <select id="age" class="border rounded px-3 py-2">
+        {listeAge.map((a, i) => <option selected={a === "Total"}>{a}</option>)}
+      </select>
+    </div>
+  </div>
+  
+  <div id="chart-container"></div>
+</Layout>
+
+<script>
+import * as Plot from "@observablehq/plot";
+import departements from "../assets/departements.geojson.json";
+import populationMain from "../assets/populationMain.json";
+
+const elmYear = document.getElementById("periode") as HTMLSelectElement;
+const elmSex = document.getElementById("sexe") as HTMLSelectElement;
+const elmAge = document.getElementById("age") as HTMLSelectElement;
+
+
+function updateChart() {
+  const selectedYear = Number(elmYear.value);
+  const selectedSex = elmSex.value;
+  const selectedAge = elmAge.value;
+  
+  const optionPlot = {
+    projection: {
+      type: "mercator" as const,
+      domain: departements,
+    },
+    color: {
+      type: "quantile" as const,
+      n: 8,
+      scheme: "Greens",
+      label: "Population en centaine de milliers",
+      legend: true,
+      transform: (d: number) => Math.round(d / 100000),
+    },
+    marks: [
+      Plot.geo(departements, {
+        fill: (d: any) => {
+          const deptName = d.properties.nom;
+          const popData = populationMain.find(
+            (p) =>
+              p.Géographie === deptName &&
+              p.Période === selectedYear &&
+              p.Sexe === selectedSex &&
+              p["Âge"] === selectedAge
+          );
+          return popData?.Valeur || 0;
+        },
+        stroke: "#999",
+        title: (d: any) => {
+          const deptName = d.properties.nom;
+          const popData = populationMain.find(
+            (p) =>
+              p.Géographie === deptName &&
+              p.Période === selectedYear &&
+              p.Sexe === selectedSex &&
+              p["Âge"] === selectedAge
+          );
+          return `${deptName} : ${popData?.Valeur?.toLocaleString() || 'N/A'}`;
+        },
+        tip: true,
+      }),
+    ],
+  };
+  
+
+  const container = document.getElementById("chart-container");
+  if (container) {
+    container.innerHTML = "";
+    const plot = Plot.plot(optionPlot);
+    container.appendChild(plot);
+  }
+}
+
+
+updateChart();
+
+
+elmYear.addEventListener("change", updateChart);
+elmSex.addEventListener("change", updateChart);
+elmAge.addEventListener("change", updateChart);
+</script>
