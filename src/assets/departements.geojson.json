@@ -1,0 +1,115 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "code": "01",
+          "nom": "Ain"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[5.0, 46.0], [5.5, 46.0], [5.5, 46.5], [5.0, 46.5], [5.0, 46.0]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "code": "02",
+          "nom": "Aisne"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[3.3, 49.3], [3.8, 49.3], [3.8, 49.8], [3.3, 49.8], [3.3, 49.3]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "code": "03",
+          "nom": "Allier"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[2.8, 46.0], [3.5, 46.0], [3.5, 46.6], [2.8, 46.6], [2.8, 46.0]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "code": "04",
+          "nom": "Alpes-de-Haute-Provence"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[5.8, 43.8], [6.5, 43.8], [6.5, 44.5], [5.8, 44.5], [5.8, 43.8]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "code": "05",
+          "nom": "Hautes-Alpes"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[6.0, 44.4], [6.8, 44.4], [6.8, 45.1], [6.0, 45.1], [6.0, 44.4]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "code": "06",
+          "nom": "Alpes-Maritimes"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[6.8, 43.5], [7.5, 43.5], [7.5, 44.2], [6.8, 44.2], [6.8, 43.5]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "code": "07",
+          "nom": "Ardèche"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[4.3, 44.3], [4.9, 44.3], [4.9, 45.1], [4.3, 45.1], [4.3, 44.3]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "code": "75",
+          "nom": "Paris"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[2.25, 48.82], [2.42, 48.82], [2.42, 48.90], [2.25, 48.90], [2.25, 48.82]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "code": "13",
+          "nom": "Bouches-du-Rhône"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[4.8, 43.2], [5.8, 43.2], [5.8, 43.8], [4.8, 43.8], [4.8, 43.2]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "code": "59",
+          "nom": "Nord"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[2.9, 50.0], [4.2, 50.0], [4.2, 51.1], [2.9, 51.1], [2.9, 50.0]]]
+        }
+      }
+    ]
+  }

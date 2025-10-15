@@ -1,8 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import populationMain from "../assets/ populationMain.json";
+import populationMain from "../assets/populationMain.json";
 
-const listePeriode = [...new Set(populationMain?.map((d) => d.Période))].reverse();
+const listePeriode = [...new Set(populationMain?.map((d) => d.Période))].sort((a, b) => b - a);
 const listeSexe = [...new Set(populationMain?.map((d) => d.Sexe))];
 const listeAge = [...new Set(populationMain?.map((d) => d["Âge"]))];
 ---
@@ -21,14 +21,14 @@ const listeAge = [...new Set(populationMain?.map((d) => d["Âge"]))];
     <div>
       <label for="sexe" class="block mb-1 font-semibold">Sexe:</label>
       <select id="sexe" class="border rounded px-3 py-2">
-        {listeSexe.map((s, i) => <option selected={s === "Total"}>{s}</option>)}
+        {listeSexe.map((s) => <option selected={s === "Total"}>{s}</option>)}
       </select>
     </div>
     
     <div>
       <label for="age" class="block mb-1 font-semibold">Âge:</label>
       <select id="age" class="border rounded px-3 py-2">
-        {listeAge.map((a, i) => <option selected={a === "Total"}>{a}</option>)}
+        {listeAge.map((a) => <option selected={a === "Total"}>{a}</option>)}
       </select>
     </div>
   </div>
@@ -45,11 +45,22 @@ const elmYear = document.getElementById("periode") as HTMLSelectElement;
 const elmSex = document.getElementById("sexe") as HTMLSelectElement;
 const elmAge = document.getElementById("age") as HTMLSelectElement;
 
-
 function updateChart() {
   const selectedYear = Number(elmYear.value);
   const selectedSex = elmSex.value;
   const selectedAge = elmAge.value;
+  
+  console.log("Selected filters:", { selectedYear, selectedSex, selectedAge });
+  
+  // Vérifier quelles données sont disponibles
+  const availableData = populationMain.filter(
+    (p) =>
+      p.Période === selectedYear &&
+      p.Sexe === selectedSex &&
+      p["Âge"] === selectedAge
+  );
+  
+  console.log("Available data points:", availableData.length);
   
   const optionPlot = {
     projection: {
@@ -87,14 +98,15 @@ function updateChart() {
               p.Sexe === selectedSex &&
               p["Âge"] === selectedAge
           );
-          return `${deptName} : ${popData?.Valeur?.toLocaleString() || 'N/A'}`;
+          return popData 
+            ? `${deptName} : ${popData.Valeur.toLocaleString()}` 
+            : `${deptName} : Données non disponibles`;
         },
         tip: true,
       }),
     ],
   };
   
-
   const container = document.getElementById("chart-container");
   if (container) {
     container.innerHTML = "";
@@ -103,9 +115,7 @@ function updateChart() {
   }
 }
 
-
 updateChart();
-
 
 elmYear.addEventListener("change", updateChart);
 elmSex.addEventListener("change", updateChart);
